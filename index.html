@@ -10,15 +10,21 @@
             background: #0d1320;
             overflow: hidden;
         }
+        .time-wrap {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
         #timer{
             text-align: center;
             font-size:22vw;
             font-weight: bold;
-            line-height: 56vh;
+            line-height: 22vw;
             color:#e2ecfd;
+            margin-bottom: 20px;
         }
         #date{
-            margin-top:50px;
             text-align: center;
             font-size:10vw;
             font-weight: bold;
@@ -27,8 +33,10 @@
     </style>
 </head>
 <body>
-    <div id="date">00月00日</div>
-    <div id="timer">00:00</div>
+    <div class="time-wrap">
+      <div id="date">00月00日</div>
+      <div id="timer">00:00</div>
+    </div>
 
     <script>
         let showSymbl = true
